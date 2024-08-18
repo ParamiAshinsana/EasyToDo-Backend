@@ -17,7 +17,6 @@ public class TaskServiceIMPL implements TaskService {
     private final TaskRepository taskRepository;
     private final TaskMapping taskMapping;
 
-
     @Override
     public TaskDTO saveTask(TaskDTO taskDTO) {
         taskDTO.setTaskId(UUID.randomUUID().toString());
