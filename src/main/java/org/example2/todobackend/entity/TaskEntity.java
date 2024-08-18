@@ -7,6 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -15,5 +18,7 @@ import lombok.NoArgsConstructor;
 public class TaskEntity {
     @Id
     private String taskId;
-
+    private String taskDescription;
+    private LocalDate issuedDate;
+    private LocalTime issuedTime;
 }
